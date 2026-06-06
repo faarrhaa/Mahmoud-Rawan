@@ -52,7 +52,7 @@ html{scroll-behavior:smooth;}
 #envelope-screen{min-height:100vh;background:#1a0b28;display:flex;flex-direction:column;align-items:center;justify-content:center;cursor:pointer;position:relative;overflow:hidden;padding:40px 20px;}
 #env-wrap{animation:floatEnv 4s ease-in-out infinite;display:flex;flex-direction:column;align-items:center;position:relative;z-index:2;}
 #env-wrap.closing{animation:envOpen .65s cubic-bezier(.4,0,.6,1) forwards!important;}
-.hint-pulse{animation:heartBeat 2.2s ease-in-out infinite;}
+.hint-pulse{animation:heartBeat 2.2s ease-in-out infinite;white-space:nowrap;}
 #invitation{display:none;}
 .fade-section{animation:fadeUp .8s ease both;}
 
@@ -149,6 +149,8 @@ html{scroll-behavior:smooth;}
   h1{font-size:clamp(28px,7vw,50px)!important;}
   .rsvp-btn{padding:14px 32px;font-size:14px;}
   .save-date-btn{padding:12px 24px;font-size:12px;}
+  .hint-pulse{font-size:12px!important;letter-spacing:3px!important;}
+  #env-wrap svg{width:260px;height:auto;}
 }
 @media(max-width:380px){
   .dress-palette-row{gap:5px!important;max-width:300px!important;}
@@ -159,6 +161,8 @@ html{scroll-behavior:smooth;}
   .clbl{font-size:8px;}
   .photobooth-polaroid img{width:120px;height:95px;}
   .contact-btn{font-size:11px;padding:10px 12px;}
+  .hint-pulse{font-size:10px!important;letter-spacing:2px!important;}
+  #env-wrap svg{width:230px;height:auto;}
 }
 </style>
 </head>
@@ -169,7 +173,6 @@ html{scroll-behavior:smooth;}
   <div class="loading-logo-container">
     <div class="loading-ring"></div>
     <div class="loading-monogram">M &amp; R</div>
-    <div style="font-family:'Cormorant Garamond',serif;font-size:14px;color:#c9a84c;letter-spacing:3px;font-style:italic;">Mahmoud &amp; Rawan</div>
   </div>
 </div>
 
